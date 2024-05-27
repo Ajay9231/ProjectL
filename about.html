@@ -1,0 +1,33 @@
+
+{% extends 'layout.html' %}
+{% block title %}About{% endblock %}
+  <!-- about section -->
+{% block body %}
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="detail-box">
+            <h2>
+              About us
+            </h2>
+            <p>
+              We are here to help people who are seeking to get daily wise work here we can give you the access to get a work based on wages which you are expecting the farmers here are very polite work minded and with great work oppurtunities.
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="img-box">
+            <img src="{{url_for('static',filename='images/about-img.jpg')}}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
+  <!-- end about section -->
+
+  

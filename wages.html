@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Work_Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for (item1, item2) in combined_list %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ item1 }}</td>
+            <td>{{ item2 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
